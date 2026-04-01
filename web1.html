@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 200;
+        }
+
+        /* navbar */
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 30px;
+            background-color: rgb(55, 53, 53);
+            color: white;
+        }
+
+        nav .icons img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+
+        nav .icons {
+            display: flex;
+            gap: 25px;
+        }
+
+        .list li {
+            list-style-type: none;
+        }
+
+        .list li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+
+        .list li a:hover {
+            color: yellow;
+        }
+
+        .list {
+            display: flex;
+            gap: 50px;
+        }
+
+
+        /* hero */
+        .hero {
+            display: flex;
+            margin: 20px 60px;
+            gap: 50px;
+        }
+
+        .left {
+            margin-top: 80px;
+        }
+
+        .left .text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .shop_button {
+            padding: 10px 25px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        .hero .right {
+            height: 500px;
+        }
+
+        .hero .right .image img {
+            width: 600px;
+            height: 500px;
+        }
+
+        /* main section */
+        .main_section {
+            text-align: center;
+        }
+
+        .main_section .sample {
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            margin-top: 50px;
+        }
+
+        .shop_button {
+            background-color: green;
+        }
+
+        /* featured */
+        .featured {
+            text-align: center;
+        }
+
+        .cards {
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 25px;
+        }
+
+        .cards .card1 {
+            width: 300px;
+            height: 450px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 15px 15px 90px rgb(225, 223, 223);
+        }
+
+        .cards .card1 .star_price {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 10px 0px 10px
+        }
+
+        .star {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .about_product {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 10px;
+            margin-top: 25px;
+            margin-left: 10px;
+        }
+
+        /* footer */
+        footer {
+            background-color: rgb(41, 39, 39);
+            color: white;
+            padding-bottom: 50px;
+        }
+
+        footer .blocks {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            padding-top: 50px;
+        }
+
+        footer .social {
+            margin: 25px 85px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social_icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        footer .blocks .imp .imp_links h4:hover{
+            /* color: rgb(108, 206, 108); */
+            color: yellow;
+        }   
+
+        .featured .cards .card1:hover{
+            transition: 0.2s ease-in-out;
+            transform: scale(1.05);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="head"
+        style="background-color:rgb(3, 3, 62); color: beige; display: flex; justify-content: space-between; padding: 15px 100px;">
+
+        <div class="left_head" style="display: flex; gap: 30px; align-items: center;">
+            <div class="head_msg" style="display: flex; gap: 5px; align-items: center;">
+                <img src="../message.jpg" style="width: 17px; height: 17px; border-radius: 50%;" alt="">
+                <h5>info@company.</h5>
+            </div>
+            <div class="head_call" style="display: flex; gap: 5px; align-items: center;">
+                <img src="../call.jpg" style="width: 17px; height: 17px; border-radius: 50%;" alt="">
+                <h5>125846464</h5>
+            </div>
+        </div>
+
+        <div class="right_head" style="display: flex; align-items: center; gap: 15px;">
+            <img src="../insta.avif" style="width: 17px; height: 17px; border-radius: 50%; cursor: pointer;" alt="">
+            <img src="../fb.avif" style="width: 17px; height: 17px; border-radius: 50%; cursor: pointer" alt="">
+            <img src="../twitter.png" style="width: 17px; height: 17px; border-radius: 50%; cursor: pointer" alt="">
+            <img src="../youtube.avif" style="width: 17px; height: 17px; border-radius: 50%; cursor: pointer" alt="">
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo" style="font-size: 30px; font-weight: bold;">Zay</div>
+
+        <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="icons">
+            <img src="../search.png" style="cursor: pointer;" alt="">
+            <img src="../cart.png" style="cursor: pointer;" alt="">
+            <div
+                style="position: absolute; top: 70px; right: 177px; width: 35px; height: 22px; background-color: beige; border-radius: 50%; color: black; text-align: center; ">
+                7</div>
+            <img src="../user.png" style="cursor: pointer;" alt="">
+            <div
+                style="position: absolute; top: 70px; right: 125px; width: 35px; height: 22px; border-radius: 50%; color: black; text-align: center; background-color: beige;">
+                99</div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="hero">
+        <div class="left">
+            <div class="text" style="margin-left: 30px;">
+                <h1 style="color: green;">ZAY E-Commerce</h1>
+                <h3 style="color: rgb(163, 161, 161); font-weight: 400;">Tiny and Perfect eCommerce Template</h3>
+                <h3 style="font-weight: 400;">Zay Shop is an eCommerce HTML5 CSS template with latest version of
+                    Bootstrap 5 (beta 1). This template is 100% free provided by <span
+                        style="color: green; text-decoration: underline;">TemplateMo</span> website. Image credits go to
+                    <span style="color: green;text-decoration: underline;">Freepik</span> <span
+                        style="color: green; text-decoration: underline;">Stories</span>, <span
+                        style="color: green; text-decoration: underline;">Unsplash</span> and <span
+                        style="color: green; text-decoration: underline;">Icons 8</span>.
+                </h3>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="image">
+                <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/banner_img_02.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <span style="display: inline-block; width: 40px; height: 2px; background-color: green; position: absolute; top: 630px; left: 550px; opacity: 70%;"></span>
+        <span style="display: inline-block; width: 40px; height: 2px; background-color: gray; position: absolute; top: 630px; left: 610px; opacity: 70%;"></span>
+        <span style="display: inline-block; width: 40px; height: 2px; background-color: gray; position: absolute; top: 630px; left: 670px; opacity: 70%;"></span>
+        <span style="display: inline-block; width: 40px; height: 2px; background-color: gray; position: absolute; top: 630px; left: 730px; opacity: 70%;"></span>
+    </div>
+
+    <div class="arrows">
+        <img src="../left_arrow.png" style="width: 40px; position: absolute; top: 350px; left: 20px; cursor: pointer;" alt="">
+        <img src="../right_arrow.png" style="width: 50px; position: absolute; top: 350px; right: 20px; cursor: pointer;" alt="">
+    </div>
+
+
+    <!-- main section -->
+    <section style="margin-top: 20px; background-color: rgb(253, 253, 214); padding-bottom: 30px;">
+        <div class="main_section">
+            <h1 style="font-weight: 300; padding-top: 20px;">Categories of the Month</h1>
+            <h4 style="font-weight: 300; margin-top: 20px;">Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.</h4>
+            <div class="sample">
+                <div style="text-align: center;">
+                    <img src="../watch.png"
+                        style="width: 200px; cursor: pointer; height: 200px; border-radius: 50%; background-color: white;" alt="">
+                    <h4 style="font-weight: 200; margin-top: 10px;">Watches</h4>
+                    <button class="shop_button">Go Shop</button>
+                </div>
+                <div style="text-align: center;">
+                    <img src="../shoes.png"
+                        style="width: 200px; cursor: pointer; height: 200px; border-radius: 50%; background-color: white;" alt="">
+                    <h4 style="font-weight: 200; margin-top: 10px;">Shoes</h4>
+                    <button class="shop_button">Go Shop</button>
+                </div>
+                <div style="text-align: center;">
+                    <img src="../glasses.png"
+                        style="width: 200px; cursor: pointer; height: 200px; border-radius: 50%; background-color: white;" alt="">
+                    <h4 style="font-weight: 200; margin-top: 10px;">Glasses</h4>
+                    <button class="shop_button">Go Shop</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Section -->
+    <section style="margin-bottom: 50px;">
+        <div class="featured">
+            <h1 style="font-weight: 300; padding-top: 20px;">Featured Product</h1>
+            <h4 style="font-weight: 300; margin-top: 20px;">Reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</h4>
+
+            <!-- featured card -->
+            <div class="cards">
+
+                <!-- card 1 -->
+                <div class="card1">
+                    <img src="../torch.jpg" style="width: 100%; height: 250px; border-bottom: 0.5px solid black; cursor: pointer;"
+                        alt="">
+                    <div class="star_price">
+                        <div class="star">
+                            <img src="../filled_star.jpg" style="width: 15px; height: 15px;" alt="">
+                            <img src="../filled_star.jpg" style="width: 15px; height: 15px;" alt="">
+                            <img src="../filled_star.jpg" style="width: 15px; height: 15px;" alt="">
+                            <img src="../unfilled_star.png" style="width: 15px; height: 15px;" alt="">
+                            <img src="../unfilled_star.png" style="width: 15px; height: 15px;" alt="">
+                        </div>
+                        <h4 style="color: gray; font-weight: 200;">$2500</h4>
+                    </div>
+
+                    <div class="about_product">
+                        <h2 style="font-weight: 200;">Torch</h2>
+                        <h5 style="font-weight: 200;">Lorem ipsum dolor sit amet.</h5>
+                        <h3 style="font-weight: 200; color: gray; margin-top: 10px;">Reviews (24)</h3>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card1">
+                    <img src="../smart_watch.jpg"
+                        style="width: 100%; height: 250px; background-color: white; border-bottom: 0.5px solid black; cursor: pointer;"
+                        alt="">
+                    <div class="star_price">
+                        <div class="star">
+                            <img src="../filled_star.jpg" style="width: 15px; height: 15px;" alt="">
+                            <img src="../filled_star.jpg" style="width: 15px; height: 15px;" alt="">
+                            <img src="../filled_star.jpg" style="width: 15px; height: 15px;" alt="">
+                            <img src="../filled_star.jpg" style="width: 15px; height: 15px;" alt="">
+                            <img src="../filled_star.jpg" style="width: 15px; height: 15px;" alt="">
+                        </div>
+                        <h4 style="color: gray; font-weight: 200;">$3500</h4>
+                    </div>
+
+                    <div class="about_product">
+                        <h2 style="font-weight: 200;">Smart Watch</h2>
+                        <h5 style="font-weight: 200;">Lorem ipsum dolor sit amet.</h5>
+                        <h3 style="font-weight: 200; color: gray; margin-top: 10px;">Reviews (24)</h3>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card1">
+                    <img src="../camera.png"
+                        style="width: 100%; height: 250px; background-color: white; border-bottom: 0.5px solid black; cursor: pointer;"
+                        alt="">
+                    <div class="star_price">
+                        <div class="star">
+                            <img src="../filled_star.jpg" style="width: 15px; height: 15px;" alt="">
+                            <img src="../filled_star.jpg" style="width: 15px; height: 15px;" alt="">
+                            <img src="../unfilled_star.png" style="width: 15px; height: 15px;" alt="">
+                            <img src="../unfilled_star.png" style="width: 15px; height: 15px;" alt="">
+                            <img src="../unfilled_star.png" style="width: 15px; height: 15px;" alt="">
+                        </div>
+                        <h4 style="color: gray; font-weight: 200;">$2500</h4>
+                    </div>
+
+                    <div class="about_product">
+                        <h2 style="font-weight: 200;">Camera</h2>
+                        <h5 style="font-weight: 200;">Lorem ipsum dolor sit amet.</h5>
+                        <h3 style="font-weight: 200; color: gray; margin-top: 10px;">Reviews (24)</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="blocks">
+
+            <!-- first block -->
+            <div style="display: flex; flex-direction: column; align-items: start; gap: 25px;">
+                <h1>Zay Shop</h1>
+                <hr style="width: 320px; color: rgb(77, 71, 71);">
+
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <img src="../location.png" width="20px" height="20px" style="border-radius: 50%;" alt="">
+                    <h4>123 Consectetur at ligula 10660</h4>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <img src="../call.jpg" width="20px" height="20px" style="border-radius: 50%;" alt="">
+                    <h4>010-020-0340</h4>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <img src="../message.jpg" width="20px" height="20px" style="border-radius: 50%;" alt="">
+                    <h4>info@company.com</h4>
+                </div>
+            </div>
+
+            <!-- second block -->
+            <div style="display: flex; flex-direction: column; align-items: start; gap: 25px;" class="imp">
+                <h1>Products</h1>
+                <hr style="width: 320px; color: rgb(77, 71, 71);">
+
+                <div style="display: flex; flex-direction: column; align-items: start; gap: 25px; cursor: pointer;" class="imp_links">
+                    <h4>Luxury</h4>
+                    <h4>Sport Wear</h4>
+                    <h4>Men's Shoe</h4>
+                    <h4>Women's Shoe</h4>
+                    <h4>Popular Dress</h4>
+                    <h4>Gym Accesories</h4>
+                    <h4>Sport Shoes</h4>
+                </div>
+            </div>
+
+            <!-- third block -->
+            <div style="display: flex; flex-direction: column; align-items: start; gap: 25px;" class="imp">
+                <h1>Further Info</h1>
+                <hr style="width: 320px; color: rgb(77, 71, 71);">
+
+                <div style="display: flex; flex-direction: column; align-items: start; gap: 25px; cursor: pointer;" class="imp_links">
+                    <h4>Home</h4>
+                    <h4>About Us</h4>
+                    <h4>Location</h4>
+                    <h4>FAQ's</h4>
+                    <h4>Contact</h4>
+                </div>
+            </div>
+        </div>
+
+        <hr style="width: 88%; color: rgb(77, 71, 71); margin: auto; margin-top: 30px;">
+
+        <div class="social">
+            <div class=social_icons>
+                <img src="../twitter.png" style="width: 35px; height: 35px; border-radius: 50%; cursor: pointer;" alt="">
+                <img src="../fb.avif" style="width: 35px; height: 35px; border-radius: 50%; cursor: pointer;" alt="">
+                <img src="../youtube.avif" style="width: 35px; height: 35px; border-radius: 50%; cursor: pointer;" alt="">
+                <img src="../insta.avif" style="width: 35px; height: 35px; border-radius: 50%; cursor: pointer;" alt="">
+            </div>
+
+            <div class="subscribe" style="display: flex; gap: 0; align-items: center;">
+                <input type="text" style="padding: 10px; border-top-left-radius: 6px; border-bottom-left-radius: 6px;"
+                    placeholder="Email Address">
+                <button
+                    style="padding: 11.5px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; background-color: green; color: white; border: none; margin-top: -1px;">Subscribe</button>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
